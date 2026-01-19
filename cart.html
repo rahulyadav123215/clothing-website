@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClothyStore - Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a class="logo" href="index.html">ClothyStore</a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="cart.html" class="active">Cart</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-btn">
+          🛒 <span class="cart-count" id="cartCount">0</span>
+        </a>
+
+        <a href="login.html" class="btn" id="loginBtn">Login</a>
+        <button class="btn btn-outline hidden" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cart -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Your Cart</h2>
+        <p>Manage your items and checkout anytime.</p>
+      </div>
+
+      <div class="cart-layout">
+        <div class="cart-items" id="cartItems">
+          <!-- Cart items injected by JS -->
+        </div>
+
+        <div class="cart-summary">
+          <h3>Order Summary</h3>
+
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong id="subtotal">₹0</strong>
+          </div>
+
+          <div class="summary-row">
+            <span>Delivery</span>
+            <strong>₹0</strong>
+          </div>
+
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <strong id="total">₹0</strong>
+          </div>
+
+          <button class="btn btn-primary full">Checkout</button>
+
+          <p class="muted small-note">
+            * Checkout button is UI only.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">✅ Updated cart!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

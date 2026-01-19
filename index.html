@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClothyStore - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-content">
+      <a class="logo" href="index.html">ClothyStore</a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="#products">Products</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-btn">
+          🛒 <span class="cart-count" id="cartCount">0</span>
+        </a>
+
+        <a href="login.html" class="btn" id="loginBtn">Login</a>
+        <button class="btn btn-outline hidden" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Upgrade Your Style ✨</h1>
+        <p>
+          Discover modern fashion essentials. Clean looks, comfy fits, and premium vibes —
+          all at ClothyStore.
+        </p>
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-badge">New Collection</div>
+        <img src="./images/profile.jpg.jpg" alt="Clothing banner" />
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-head">
+        <h2>Featured Products</h2>
+        <p>Handpicked outfits for your daily style.</p>
+      </div>
+
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <div class="toast" id="toast">✅ Added to cart!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

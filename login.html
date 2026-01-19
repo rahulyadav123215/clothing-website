@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClothyStore - Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a class="logo" href="index.html">ClothyStore</a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-btn">
+          🛒 <span class="cart-count" id="cartCount">0</span>
+        </a>
+
+        <a href="login.html" class="btn active-btn" id="loginBtn">Login</a>
+        <button class="btn btn-outline hidden" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Login Box -->
+  <section class="section">
+    <div class="container auth-container">
+      <div class="auth-card">
+        <h2>Welcome Back 👋</h2>
+        <p class="muted">Login to continue shopping.</p>
+
+        <form id="loginForm" class="auth-form">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="example@gmail.com" required />
+
+          <label>Password</label>
+          <input type="password" id="password" placeholder="Enter password" required />
+
+          <button type="submit" class="btn btn-primary full">Login</button>
+        </form>
+
+        <p class="muted small-note">
+          * Demo login only (any email & password works)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">✅ Logged in successfully!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
